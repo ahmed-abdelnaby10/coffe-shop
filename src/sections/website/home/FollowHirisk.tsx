@@ -3,7 +3,7 @@ import React from 'react'
 import facebookBanner from "/public/images/facebook.bg_.svg"
 import instagramBanner from "/public/images/insta.bg_.svg"
 import tiktokBanner from "/public/images/tiktokbanner.png"
-import phoneBanner from "/public/images/phoneBanner.png"
+import phoneBanner from "/public/images/phonebanner.png"
 import Image from 'next/image'
 import { FaFacebookF, FaInstagram, FaTiktok, FaPhoneAlt } from "react-icons/fa";
 import { Typography } from '@/components/ui/typography'

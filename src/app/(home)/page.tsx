@@ -20,6 +20,7 @@ export default function page() {
               width={1000}
               height={1000}
               className="w-16 h-16 rounded-full shadow-md object-cover"
+              priority
             />
             <Typography variant="h1" size="xl" color="main">HiRisk</Typography>
             <Typography variant="p" size="base" color="main" className="text-center">Introduce you and your friends a unique and <br /> memorable experience.</Typography>
@@ -27,7 +28,7 @@ export default function page() {
           <MenuDialog />
           <Link
             href="/home"
-            className="flex items-center justify-between gap-5 w-full max-w-lg h-fit rounded-[36px]"
+            className="flex flex-row-reverse pr-2 items-center justify-between gap-5 w-full max-w-lg h-fit rounded-[36px]"
             variant="outline"
           >
             <Image 
@@ -36,6 +37,7 @@ export default function page() {
               width={1000}
               height={1000}
               className="w-12 h-12 rounded-full shadow-md"
+              priority
             />
             <Typography variant="p" color="primary">Website</Typography>
           </Link>

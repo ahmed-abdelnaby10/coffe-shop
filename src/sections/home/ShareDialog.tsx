@@ -1,25 +1,34 @@
-import { Dialog, DialogContent, DialogTrigger } from "@/components/ui/dialog";
+import { Dialog, DialogContent, DialogDescription, DialogHeader, DialogTitle, DialogTrigger } from "@/components/ui/dialog";
 import { Link } from "@/components/ui/linkButton";
-import { Typography } from "@/components/ui/typography";
 import Image from "next/image";
-import { FaFacebook, FaTwitter, FaInstagram, FaSnapchat, FaTiktok, FaLinkedin, FaWhatsapp, FaEnvelope, FaShareAlt } from "react-icons/fa";
+import { FaFacebook, FaInstagram, FaSnapchat, FaTiktok, FaLinkedin, FaWhatsapp, FaEnvelope, FaShareAlt } from "react-icons/fa";
+import { FaXTwitter } from "react-icons/fa6";
 import menu from "/public/images/main-menu.jpg"
 import { Separator } from "@/components/ui/separator";
+import { Button } from "@/components/ui/button";
+import { mainLinks } from "@/utils/constants";
 
 const ShareDialog = () => {
 	const pdfFilePath = "/HiRisk Menu.pdf#zoom=FitH&navpanes=0"
-	const shareUrl = encodeURIComponent(`http://localhost:3000/${pdfFilePath}`);
+	const shareUrl = encodeURIComponent(`${mainLinks.shareURL}/${pdfFilePath}`);
   const message = encodeURIComponent("Check out this menu!");
 
   return (
     <Dialog>
       <DialogTrigger asChild>
-				<FaShareAlt className="absolute top-4 left-4 cursor-pointer hover:text-linkedin duration-300"/>
+				<Button variant={"ghost"} className="group absolute top-4 left-4 ">
+          <FaShareAlt className="cursor-pointer group-hover:text-linkedin duration-300"/>
+        </Button>
       </DialogTrigger>
 
       <DialogContent className="sm:max-w-[425px] max-sm:w-with-padding rounded-xl">
+        <DialogHeader>
+					<DialogTitle className='text-center text-mainColor'>Share Link</DialogTitle>
+					<DialogDescription className='sr-only'>
+						Share HiRisk Menu.
+					</DialogDescription>
+				</DialogHeader>
         <div className="flex items-center justify-start flex-col gap-4">
-					<Typography variant="h1" color="main" className="mb-4 text-center">Share Link</Typography>
 					<Image 
 						src={menu.src}
 						alt="Menu"
@@ -35,7 +44,7 @@ const ShareDialog = () => {
           </Link>
 
           <Link className="rounded-full bg-black text-white hover:text-black hover:bg-white duration-300 w-10 h-10 p-0" href={`https://twitter.com/share?url=${shareUrl}&text=${message}`} target="_blank" rel="noopener noreferrer">
-            <FaTwitter className="text-2xl" />
+            <FaXTwitter className="text-2xl" />
           </Link>
 
           <Link className="rounded-full bg-instagram text-white hover:text-instagram hover:bg-white duration-300 w-10 h-10 p-0" href={`https://instagram.com`} target="_blank" rel="noopener noreferrer">

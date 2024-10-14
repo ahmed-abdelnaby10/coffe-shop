@@ -28,6 +28,7 @@ export default function NavBar() {
                             width={1000}
                             height={1000}
                             className="w-10 h-10 rounded-full object-cover"
+                            priority
                         />
                     </NextLink>
                     <Link
@@ -83,6 +84,7 @@ export default function NavBar() {
                                     width={1000}
                                     height={1000}
                                     className="w-10 h-10 rounded-full object-cover"
+                                    priority
                                 />
                             </NextLink>
                             <Link

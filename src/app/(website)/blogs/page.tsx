@@ -1,6 +1,11 @@
+import Landing from "@/components/reusable components/Landing";
+import BlogPosts from "@/sections/website/blogs/BlogPosts";
 
 export default function Page() {
     return (
-        <div>Blogs</div>
+        <>
+            <Landing />
+            <BlogPosts />
+        </>
     )
 }

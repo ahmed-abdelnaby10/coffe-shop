@@ -1,6 +1,6 @@
 import { Button } from "@/components/ui/button";
 import { Typography } from "@/components/ui/typography";
-import mainBg from "/public/images/main-bg.png"
+import mainBg from "/public/images/blog.jpg"
 import Image from "next/image";
 
 export default function Landing() {

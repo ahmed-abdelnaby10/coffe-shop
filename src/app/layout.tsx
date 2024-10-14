@@ -1,6 +1,6 @@
 import type { Metadata } from "next";
 import "./globals.css";
-import StoreProvider from "@/lib/providers/StoreProvider";
+// import StoreProvider from "@/lib/providers/StoreProvider";
 import NavBar from "@/components/reusable components/NavBar";
 import FullPageLoader from "@/components/resource stats/FullPageLoader";
 import Footer from "@/components/reusable components/Footer";
@@ -30,12 +30,12 @@ export default function RootLayout({
       <body
         className={`m-0 p-0`}
       >
-          <StoreProvider>
+          {/* <StoreProvider> */}
               <NavBar />
               <FullPageLoader />
               {children}
               <Footer />
-          </StoreProvider>
+          {/* </StoreProvider> */}
       </body>
     </html>
   );

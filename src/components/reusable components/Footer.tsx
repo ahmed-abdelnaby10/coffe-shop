@@ -30,6 +30,7 @@ export default function Footer() {
                                 width={1000}
                                 height={1000}
                                 className="sm:w-16 sm:h-16 w-10 h-10 rounded-full object-cover"
+                                priority
                             />
                         </NextLink>
                         <div className="flex items-center justify-center gap-2">

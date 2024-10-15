@@ -1,3 +1,5 @@
+'use client'
+
 import Container from '@/components/reusable components/Container'
 import { Separator } from '@/components/ui/separator'
 import { Typography } from '@/components/ui/typography'
@@ -11,6 +13,7 @@ import React from 'react'
 export default function BlogComponent({ blogId }: { blogId: number }) {
     const blog = blogs.find((blog) => blog.id === blogId) as Blog
     const otherBlogs = blogs.filter((blog) => blog.id !== blogId) as Blog[]
+
     return (
         <Container className="min-h-fit flex flex-col lg:gap-20 gap-10">
             <div className='flex flex-col items-center justify-start w-full gap-10 max-sm:gap-5'>
@@ -26,7 +29,9 @@ export default function BlogComponent({ blogId }: { blogId: number }) {
                                             <div className='flex items-center'>
                                                 <Dot />
                                                 <Typography variant='p' size="md" color="primary" className='font-bold'>{item.title}</Typography>
-                                                <Typography variant='p' size="md" color="muted" className=''>&nbsp;-&nbsp;{item.subtitle}</Typography>
+                                                <Typography variant='p' size="md" color="muted" className={`${item.subtitle ? 'ml-1' : ''}`}>
+                                                    {item.subtitle ? `- ${item.subtitle}` : ''}
+                                                </Typography>
                                             </div>
                                             <Typography className='ml-8' variant='p' color="muted">{item.blog}</Typography>
                                         </li>
@@ -42,6 +47,8 @@ export default function BlogComponent({ blogId }: { blogId: number }) {
                             width={9999}
                             height={9999}
                             className='w-full h-full rounded-lg lg:object-cover'
+                            placeholder="blur"
+                            blurDataURL={blog.image.blurDataURL}
                         />
                     </div>
                 </div>
@@ -59,6 +66,8 @@ export default function BlogComponent({ blogId }: { blogId: number }) {
                                             width={99999}
                                             height={99999}
                                             className='w-full h-full rounded-lg'
+                                            placeholder='blur'
+                                            blurDataURL={item.image.blurDataURL}
                                         />
                                     </div>
                                     <Typography variant='h1' className='text-2xl' color="main">{item.title}</Typography>

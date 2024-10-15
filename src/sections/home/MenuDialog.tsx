@@ -20,6 +20,8 @@ export default function MenuDialog() {
 				<Button variant="outline" className="flex flex-row-reverse pr-2 items-center justify-between gap-5 w-full max-w-lg h-fit rounded-[36px]">
 					<Image
 						src={mainMenu.src}
+						placeholder="blur"
+						blurDataURL={mainMenu.blurDataURL}
 						alt="Image"
 						width={1000}
 						height={1000}

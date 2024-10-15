@@ -21,8 +21,9 @@ export default function Banners() {
                             className="w-full h-full"
                             quality={75}
                             priority
+                            placeholder="blur"
                             blurDataURL={hiriskbanner.blurDataURL!}
-                        />
+                            />
                     </div>
                 </AnimatedCard>
                 <AnimatedCard direction="right" className="lg:basis-1/2 max-lg:w-full">
@@ -35,6 +36,7 @@ export default function Banners() {
                             className="w-full h-full"
                             quality={75}
                             priority
+                            placeholder="blur"
                             blurDataURL={coffeebanner.blurDataURL!}
                         />
                         <div className="absolute top-0 left-0 p-5 h-full flex flex-col items-start justify-center">

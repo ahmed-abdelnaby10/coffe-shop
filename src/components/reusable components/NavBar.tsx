@@ -25,6 +25,8 @@ export default function NavBar() {
                         <Image 
                             alt="logo"
                             src={logo.src}
+                            placeholder="blur"
+                            blurDataURL={logo.blurDataURL}
                             width={1000}
                             height={1000}
                             className="w-10 h-10 rounded-full object-cover"
@@ -33,10 +35,10 @@ export default function NavBar() {
                     </NextLink>
                     <Link
                         variant="navLink"
-                        href="#"
+                        href="/about-us"
                         className="h-full rounded-none transition-colors"
                     >
-                        Orders
+                        About Us
                     </Link>
                     <Link
                         variant="navLink"
@@ -81,6 +83,8 @@ export default function NavBar() {
                                 <Image 
                                     alt="logo"
                                     src={logo.src}
+                                    placeholder="blur"
+                                    blurDataURL={logo.blurDataURL}
                                     width={1000}
                                     height={1000}
                                     className="w-10 h-10 rounded-full object-cover"
@@ -96,10 +100,10 @@ export default function NavBar() {
                             </Link>
                             <Link
                                 variant="navLink"
-                                href="#"
+                                href="/about-us"
                                 className="h-full rounded-none text-start transition-colors w-full justify-start"
                             >
-                                Orders
+                                About Us
                             </Link>
                             <Link
                                 variant="navLink"

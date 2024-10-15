@@ -27,6 +27,8 @@ export default function Footer() {
                             <Image 
                                 alt="logo"
                                 src={logo.src}
+                                placeholder="blur"
+                                blurDataURL={logo.blurDataURL}
                                 width={1000}
                                 height={1000}
                                 className="sm:w-16 sm:h-16 w-10 h-10 rounded-full object-cover"
@@ -59,7 +61,7 @@ export default function Footer() {
                     </div>
                     <div className="sm:w-full lg:w-fit sm:pl-10 lg:pl-0 flex flex-col items-start justify-start">
                         <Typography variant="h1" color="main" className="sm:mb-3 mb-2 sm:text-2xl text-lg">HiRisk</Typography>
-                        <Link variant="navLink" className="pl-0 pt-0 sm:text-base text-sm font-bold" href="#">About Us</Link>
+                        <Link variant="navLink" className="pl-0 pt-0 sm:text-base text-sm font-bold" href="/about-us">About Us</Link>
                         <Link variant="navLink" className="pl-0 pt-0 sm:text-base text-sm font-bold" href="#">Menu</Link>
                         <Link variant="navLink" className="pl-0 pt-0 sm:text-base text-sm font-bold" href="#">Blogs</Link>
                         <Link variant="navLink" className="pl-0 pt-0 sm:text-base text-sm font-bold" href="#">Contact us</Link>

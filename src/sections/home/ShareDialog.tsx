@@ -32,6 +32,8 @@ const ShareDialog = () => {
 					<Image 
 						src={menu.src}
 						alt="Menu"
+            placeholder="blur"
+            blurDataURL={menu.blurDataURL}
 						width={1000}
 						height={1000}
 						className="object-cover rounded-xl w-60 h-32"

@@ -40,6 +40,8 @@ export default function Pickup() {
                                             width={1000}
                                             height={1000}
                                             className="absolute top-0 left-0 w-full h-full z-20 object-cover"
+                                            placeholder="blur"
+                                            blurDataURL={cate.image.blurDataURL}
                                         />
                                         <div className="flex items-center justify-between gap-2 z-50 w-full px-1 pb-5">
                                             <Typography variant="h1" size="xl" color="main">{cate.title}</Typography>
@@ -71,6 +73,8 @@ export default function Pickup() {
                                 width={10000}
                                 height={10000}
                                 className="w-full h-full object-cover rounded-full"
+                                placeholder="blur"
+                                blurDataURL={img.blurDataURL}
                             />
                         </div>
                     </div>

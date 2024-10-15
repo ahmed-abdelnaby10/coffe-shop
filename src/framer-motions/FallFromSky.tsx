@@ -5,10 +5,10 @@ import { useInView } from 'react-intersection-observer';
 interface FallFromSkyAnimationProps {
     children: React.ReactNode,
     delay: number;
-    style?: React.CSSProperties
+    className?: string
 }
 
-const FallFromSkyAnimation: React.FC<FallFromSkyAnimationProps> = ({ children, delay, style }) => {
+const FallFromSkyAnimation: React.FC<FallFromSkyAnimationProps> = ({ children, delay, className }) => {
     const controls = useAnimation();
     const { ref, inView } = useInView({
         triggerOnce: true,
@@ -38,7 +38,7 @@ const FallFromSkyAnimation: React.FC<FallFromSkyAnimationProps> = ({ children, d
             animate={controls}
             variants={variants}
             transition={{ duration: 1.5, delay, ease: 'easeOut' }}
-            style={{...style}}
+            className={className || ''}
         >
             {children}
         </motion.div>

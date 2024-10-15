@@ -21,6 +21,8 @@ export default function page() {
               height={1000}
               className="w-16 h-16 rounded-full shadow-md object-cover"
               priority
+              placeholder="blur"
+              blurDataURL={logo.blurDataURL}
             />
             <Typography variant="h1" size="xl" color="main">HiRisk</Typography>
             <Typography variant="p" size="base" color="main" className="text-center">Introduce you and your friends a unique and <br /> memorable experience.</Typography>
@@ -38,6 +40,8 @@ export default function page() {
               height={1000}
               className="w-12 h-12 rounded-full shadow-md"
               priority
+              placeholder="blur"
+              blurDataURL={website.blurDataURL}
             />
             <Typography variant="p" color="primary">Website</Typography>
           </Link>

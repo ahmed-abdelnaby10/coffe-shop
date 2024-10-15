@@ -21,6 +21,8 @@ export default function BlogPosts() {
                                         width={9999}
                                         height={9999}
                                         priority
+                                        placeholder="blur"
+                                        blurDataURL={blog.image.blurDataURL}
                                         className='w-full h-full rounded-xl'
                                     />
                                 </div>

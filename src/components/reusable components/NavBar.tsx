@@ -42,24 +42,24 @@ export default function NavBar() {
                     </Link>
                     <Link
                         variant="navLink"
-                        href="#"
+                        href="/our-menu"
                         className="h-full rounded-none transition-colors"
                     >
-                        Products
+                        Menu
                     </Link>
                     <Link
                         variant="navLink"
-                        href="#"
+                        href="/blogs"
                         className="h-full rounded-none transition-colors"
                     >
-                        Customers
+                        Blogs
                     </Link>
                     <Link
                         variant="navLink"
-                        href="#"
+                        href="/contact-us"
                         className="h-full rounded-none transition-colors"
                     >
-                        Analytics
+                        Contact Us
                     </Link>
                 </nav>
                 <Sheet>
@@ -93,17 +93,17 @@ export default function NavBar() {
                             </NextLink>
                             <Link
                                 variant="navLink"
-                                href="#"
-                                className="h-full rounded-none text-start transition-colors w-full justify-start"
-                            >
-                                Dasboard
-                            </Link>
-                            <Link
-                                variant="navLink"
                                 href="/about-us"
                                 className="h-full rounded-none text-start transition-colors w-full justify-start"
                             >
                                 About Us
+                            </Link>
+                            <Link
+                                variant="navLink"
+                                href="/our-menu"
+                                className="h-full rounded-none text-start transition-colors w-full justify-start"
+                            >
+                                Menu
                             </Link>
                             <Link
                                 variant="navLink"

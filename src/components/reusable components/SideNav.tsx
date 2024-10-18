@@ -4,26 +4,16 @@ import { Link } from '@/components/ui/linkButton'
 import useMediaQuery from '@/hooks/useMediaQuery'
 import React from 'react'
 
-export default function SideNav() {
-    const sideNavLinks = [
-        {
-            title: "who we are",
-            link: "who-we-are" 
-        },
-        {
-            title: "Mission & Vision",
-            link: "mission-vision" 
-        },
-        {
-            title: "History & Timeline",
-            link: "history-timeline" 
-        },
-        {
-            title: "Our Story",
-            link: "story" 
-        },
-    ]
+type Links = {
+    link: string,
+    title: string
+}
 
+interface SidenavProps {
+    sideNavLinks: Links[],
+    blank: boolean
+}
+export default function SideNav({ sideNavLinks, blank }: SidenavProps) {
     const isSmallScreen = useMediaQuery('(min-width:1024px)')
     if (isSmallScreen)
     return (
@@ -32,7 +22,7 @@ export default function SideNav() {
                 {
                     sideNavLinks.map((item, index) => {
                         return (
-                            <Link key={index} href={`#${item.link}`} variant="outline" className='text-mainColor whitespace-normal max-sm:py-2 block h-fit capitalize'>
+                            <Link key={index} href={blank ? `${item.link}` : `#${item.link}`} variant="outline" className='text-mainColor whitespace-normal max-sm:py-2 block h-fit capitalize'>
                                 {item.title}
                             </Link>
                         )

@@ -4,6 +4,7 @@ import { Blog } from "@/types/blogs";
 import blog1 from "/public/images/blog-1.jpg"
 import blog2 from "/public/images/blog-2.jpg"
 import { mainLinks } from "./constants";
+import { RiDrinks2Line } from "react-icons/ri";
 
 export const blogs: Blog[] = [
     {
@@ -98,7 +99,7 @@ export const menuData: Menu[] = [
             { name: { en: "Mocha Lotus", ar: "موكا لوتس" }, price: 60 },
             { name: { en: "Corto cookies", ar: "كورتو كوكيز" }, price: 57 }
         ],
-        image: `${mainLinks.previewURL}/categories/italianCoffee.png`
+        image: `${mainLinks.previewURL}/categories/italianCoffee.png`,
     },
     {
         category: "Coffee",
@@ -110,7 +111,7 @@ export const menuData: Menu[] = [
             { name: { en: "Double Nutella", ar: "دوبل نوتيلا" }, price: 58 },
             { name: { en: "Double Lotus", ar: "دوبل لوتس" }, price: 58 }
         ],
-        image: `${mainLinks.previewURL}/categories/italianCoffee.png`
+        image: `${mainLinks.previewURL}/categories/hotDrinks.png`
     },
     {
         category: "Hot Chocolate",
@@ -126,7 +127,7 @@ export const menuData: Menu[] = [
             { name: { en: "Hot Chocolate Kinder", ar: "هوت شوكولاتة كندر" }, price: 65 },
             { name: { en: "Lotus", ar: "لوتس" }, price: 63 }
         ],
-        image: `${mainLinks.previewURL}/categories/italianCoffee.png`
+        image: `${mainLinks.previewURL}/categories/hotDrinks.png`
     },
     {
         category: "Hot Drinks",
@@ -137,7 +138,7 @@ export const menuData: Menu[] = [
             { name: { en: "Hot Sedar", ar: "سدر حار" }, price: 35 },
             { name: { en: "Felever Tea", ar: "شاي فليفر" }, price: 30 }
         ],
-        image: `${mainLinks.previewURL}/categories/italianCoffee.png`
+        image: `${mainLinks.previewURL}/categories/hotDrinks.png`
     },
     {
         category: "Ice Drinks",
@@ -155,7 +156,7 @@ export const menuData: Menu[] = [
             { name: { en: "Ice Matcha Latte", ar: "ايس ماتشا لاتيه" }, price: 60 },
             { name: { en: "Ice Pistachio Latte", ar: "ايس فستق لاتيه" }, price: 80 }
         ],
-        image: `${mainLinks.previewURL}/categories/italianCoffee.png`
+        image: `${mainLinks.previewURL}/categories/iceDrinks.png`
     },
     {
         category: "Boba",
@@ -165,7 +166,7 @@ export const menuData: Menu[] = [
             { name: { en: "Boba Matcha Strawberry", ar: "بوبا ماتشا ستروبري" }, price: 82 },
             { name: { en: "Boba Matcha Chocolate", ar: "بوبا ماتشا شوكليت" }, price: 75 }
         ],
-        image: `${mainLinks.previewURL}/categories/italianCoffee.png`
+        image: `${mainLinks.previewURL}/categories/boba.png`
     },
     {
         category: "Frappuccino",
@@ -175,7 +176,7 @@ export const menuData: Menu[] = [
             { name: { en: "Chocolate Mocha Frappe", ar: "فرابيه موكا شوكليت" }, price: 80 },
             { name: { en: "White Mocha Frappe", ar: "فرابيه موكا وايت" }, price: 80 }
         ],
-        image: `${mainLinks.previewURL}/categories/italianCoffee.png`
+        image: `${mainLinks.previewURL}/categories/frappe.png`
     },
     {
         category: "Frappe Cream",
@@ -187,7 +188,7 @@ export const menuData: Menu[] = [
             { name: { en: "Chocolate Frappe", ar: "فرابيه شوكليت" }, price: 90 },
             { name: { en: "Lotus Frappe", ar: "فرابيه لوتس" }, price: 72 }
         ],
-        image: `${mainLinks.previewURL}/categories/italianCoffee.png`
+        image: `${mainLinks.previewURL}/categories/frappe.png`
     },
     {
         category: "Smoothies",
@@ -209,7 +210,7 @@ export const menuData: Menu[] = [
             { name: { en: "Blueberry Cookies", ar: "بلو بيري كوكيز" }, price: 55 },
             { name: { en: "Energy Frosty", ar: "اينرجي فروستي" }, price: 55 }
         ],
-        image: `${mainLinks.previewURL}/categories/italianCoffee.png`
+        image: `${mainLinks.previewURL}/categories/smoothies.png`
     },
     {
         category: "Milk Shake",
@@ -226,7 +227,7 @@ export const menuData: Menu[] = [
             { name: { en: "Pistachio", ar: "بيستاشيو" }, price: 90 },
             { name: { en: "Lotus", ar: "لوتس" }, price: 78 }
         ],
-        image: `${mainLinks.previewURL}/categories/italianCoffee.png`
+        image: `${mainLinks.previewURL}/categories/milkShake.png`
     },
     {
         category: "Fresh Juice",
@@ -242,7 +243,7 @@ export const menuData: Menu[] = [
             { name: { en: "Kiwi", ar: "كيوي" }, price: 62 },
             { name: { en: "Date", ar: "تمر" }, price: 62 }
         ],
-        image: `${mainLinks.previewURL}/categories/italianCoffee.png`
+        image: `${mainLinks.previewURL}/categories/freshJuice.png`
     },    
     {
         category: "Avocado Selections",
@@ -253,7 +254,7 @@ export const menuData: Menu[] = [
             { name: { en: "Banana", ar: "موز" }, price: 85 },
             { name: { en: "Date", ar: "تمر" }, price: 87 }
         ],
-        image: `${mainLinks.previewURL}/categories/italianCoffee.png`
+        image: `${mainLinks.previewURL}/categories/avocados.png`
     },
     {
         category: "Mocktails",
@@ -268,7 +269,7 @@ export const menuData: Menu[] = [
             { name: { en: "Mojito Island", ar: "موهيتو آيلاند" }, price: 57 },
             { name: { en: "Mojito Redbull", ar: "موهيتو ريدبول" }, price: 80 }
         ],
-        image: `${mainLinks.previewURL}/categories/italianCoffee.png`
+        image: `${mainLinks.previewURL}/categories/mocktails.png`
     },
     {
         category: "Soft Drinks",
@@ -284,7 +285,8 @@ export const menuData: Menu[] = [
             { name: { en: "Sperto Spats", ar: "سبرتو سباتس" }, price: 30 },
             { name: { en: "Mineral Water", ar: "مياه معدنية" }, price: 10 }
         ],
-        image: `${mainLinks.previewURL}/categories/italianCoffee.png`
+        image: `${mainLinks.previewURL}/categories/softDrinks.png`,
+        icon: RiDrinks2Line
     },
     {
         category: "Brioche Ice Cream",
@@ -297,7 +299,7 @@ export const menuData: Menu[] = [
             { name: { en: "Kinder", ar: "كيندر" }, price: 68 },
             { name: { en: "Oreo", ar: "أوريو" }, price: 65 }
         ],
-        image: `${mainLinks.previewURL}/categories/italianCoffee.png`
+        image: `${mainLinks.previewURL}/categories/brioche.png`
     },
     {
         category: "Waffle",
@@ -310,7 +312,7 @@ export const menuData: Menu[] = [
             { name: { en: "Chocolate - Caramel", ar: "شوكولاتة - كراميل" }, price: 67 },
             { name: { en: "Waffle Mix", ar: "وافل ميكس" }, price: 80 }
         ],
-        image: `${mainLinks.previewURL}/categories/italianCoffee.png`
+        image: `${mainLinks.previewURL}/categories/waffle.png`
     },
     {
         category: "Croffel",
@@ -323,7 +325,7 @@ export const menuData: Menu[] = [
             { name: { en: "Kinder", ar: "كيندر" }, price: 100 }
     
         ],
-        image: `${mainLinks.previewURL}/categories/italianCoffee.png`
+        image: `${mainLinks.previewURL}/categories/croffle.png`
     },
     {
         category: "Mini Pancakes",
@@ -336,7 +338,7 @@ export const menuData: Menu[] = [
             { name: { en: "Pistachio", ar: "فستق" }, price: 95 },
             { name: { en: "Mix Sauce", ar: "ميكس صوص" }, price: 82 }
         ],
-        image: `${mainLinks.previewURL}/categories/italianCoffee.png`
+        image: `${mainLinks.previewURL}/categories/miniPancakes.png`
     },
     {
         category: "Cheese Cake",
@@ -349,7 +351,7 @@ export const menuData: Menu[] = [
             { name: { en: "Kinder", ar: "كيندر" }, price: 80 },
             { name: { en: "Pistachio", ar: "فستق" }, price: 85 }
         ],
-        image: `${mainLinks.previewURL}/categories/italianCoffee.png`
+        image: `${mainLinks.previewURL}/categories/spastians.png`
     },
     {
         category: "San Sebastian",
@@ -361,7 +363,7 @@ export const menuData: Menu[] = [
             { name: { en: "Kinder", ar: "كيندر" }, price: 80 },
             { name: { en: "Pistachio", ar: "فستق" }, price: 85 }
         ],
-        image: `${mainLinks.previewURL}/categories/italianCoffee.png`
+        image: `${mainLinks.previewURL}/categories/spastians.png`
     },
     {
         category: "Dessert Choices",
@@ -385,40 +387,54 @@ export const menuData: Menu[] = [
             { name: { en: "White Chocolate Eclair", ar: "إكلير شوكولاتة بيضاء" }, price: 80 },
             { name: { en: "Chocolate Eclair", ar: "إكلير شوكولاتة" }, price: 80 }
         ],
-        image: `${mainLinks.previewURL}/categories/italianCoffee.png`
+        image: `${mainLinks.previewURL}/categories/dessert.png`
     },
     {
         category: "Cinnabon",
         items: [
-            { name: { en: "", ar: "" }, price: 0 },
-            { name: { en: "", ar: "" }, price: 0 },
-            { name: { en: "", ar: "" }, price: 0 },
-            { name: { en: "", ar: "" }, price: 0 },
-            { name: { en: "", ar: "" }, price: 0 }
+            { name: { en: "Classic", ar: "كلاسيك" }, price: 55 },
+            { name: { en: "Chocolate", ar: "شوكليت" }, price: 65 },
+            { name: { en: "Carmel", ar: "كراميل" }, price: 65 },
+            { name: { en: "Nutella", ar: "نوتيلا" }, price: 70 },
+            { name: { en: "Lotus", ar: "لوتس" }, price: 70 }
         ],
-        image: `${mainLinks.previewURL}/categories/italianCoffee.png`
+        image: `${mainLinks.previewURL}/categories/cinabon.png`
     },
     {
         category: "Donut",
         items: [
-            { name: { en: "", ar: "" }, price: 0 },
-            { name: { en: "", ar: "" }, price: 0 },
-            { name: { en: "", ar: "" }, price: 0 },
-            { name: { en: "", ar: "" }, price: 0 },
-            { name: { en: "", ar: "" }, price: 0 }
+            { name: { en: "Chocolate", ar: "شوكليت" }, price: 55 },
+            { name: { en: "Carmel", ar: "كراميل" }, price: 55 },
+            { name: { en: "Nutella", ar: "نوتيلا" }, price: 60 },
+            { name: { en: "Lotus", ar: "لوتس" }, price: 60 },
+            { name: { en: "Pistachio Donuts", ar: "فستق" }, price: 65 },
+            { name: { en: "Kinder", ar: "كيندر" }, price: 65 },
+            { name: { en: "Oreo", ar: "اوريو" }, price: 60 },
+            { name: { en: "Chocolate Chips Donuts", ar: "دونات شوكليت شيبس" }, price: 55 },
         ],
-        image: `${mainLinks.previewURL}/categories/italianCoffee.png`
+        image: `${mainLinks.previewURL}/categories/donuts.png`
     },
     {
         category: "Extra",
         items: [
-            { name: { en: "", ar: "" }, price: 0 },
-            { name: { en: "", ar: "" }, price: 0 },
-            { name: { en: "", ar: "" }, price: 0 },
-            { name: { en: "", ar: "" }, price: 0 },
-            { name: { en: "", ar: "" }, price: 0 }
+            { name: { en: "Cream", ar: "كريم" }, price: 10 },
+            { name: { en: "Milk", ar: "حليب" }, price: 15 },
+            { name: { en: "Espresso", ar: "اسبريسو" }, price: 15 },
+            { name: { en: "Nutella", ar: "نوتيلا" }, price: 15 },
+            { name: { en: "Lotus sauce", ar: "صوص لوتس" }, price: 15 },
+            { name: { en: "Kinder sauce", ar: "صوص كيندر" }, price: 22 },
+            { name: { en: "Pistachio sauce", ar: "صوص فستق" }, price: 28 },
+            { name: { en: "Roche sauce", ar: "صوص روشيه" }, price: 20 },
+            { name: { en: "Flavor", ar: "فلافور" }, price: 15 },
+            { name: { en: "Chocolate sauce", ar: "صوص شوكليت" }, price: 15 },
+            { name: { en: "Caramel sauce", ar: "صوص كراميل" }, price: 12 },
+            { name: { en: "Topping", ar: "توبينج" }, price: 15 },
+            { name: { en: "Oreo", ar: "اوريو" }, price: 12 },
+            { name: { en: "Ice cream", ar: "ايس كريم" }, price: 12 },
+            { name: { en: "Boba", ar: "بوبا" }, price: 20 },
+            { name: { en: "Nuts", ar: "مكسرات" }, price: 15 },
         ],
-        image: `${mainLinks.previewURL}/categories/italianCoffee.png`
+        image: `${mainLinks.previewURL}/categories/extras.png`
     },
     {
         category: "Breakfast",
@@ -429,29 +445,32 @@ export const menuData: Menu[] = [
             { name: { en: "", ar: "" }, price: 0 },
             { name: { en: "", ar: "" }, price: 0 }
         ],
-        image: `${mainLinks.previewURL}/categories/italianCoffee.png`
+        image: `${mainLinks.previewURL}/categories/breakfast.png`
     },
     {
         category: "Appetizers",
         items: [
-            { name: { en: "", ar: "" }, price: 0 },
-            { name: { en: "", ar: "" }, price: 0 },
-            { name: { en: "", ar: "" }, price: 0 },
-            { name: { en: "", ar: "" }, price: 0 },
-            { name: { en: "", ar: "" }, price: 0 }
+            { name: { en: "French Fries", ar: "بطاطس" }, price: 40 },
+            { name: { en: "Cheesy Fries", ar: "بطاطس بالجبنة" }, price: 75 },
+            { name: { en: "Cheesy Fries chicken", ar: "بطاطس بالجبنة و الفراخ" }, price: 140 },
+            { name: { en: "Chicken Strips", ar: "تشيكن استربس" }, price: 120 },
+            { name: { en: "Mozzarella Sticks", ar: "اصابع الموتزاريلا" }, price: 75 },
+            { name: { en: "Onion Rings", ar: "حلقات البصل" }, price: 73 },
+            { name: { en: "Sweet chili shrimp", ar: "جمبرى سويت تشيلي" }, price: 150 },
         ],
-        image: `${mainLinks.previewURL}/categories/italianCoffee.png`
+        image: `${mainLinks.previewURL}/categories/appetizers.png`
     },
     {
         category: "Pans",
         items: [
-            { name: { en: "", ar: "" }, price: 0 },
-            { name: { en: "", ar: "" }, price: 0 },
-            { name: { en: "", ar: "" }, price: 0 },
-            { name: { en: "", ar: "" }, price: 0 },
-            { name: { en: "", ar: "" }, price: 0 }
+            { name: { en: "Sausage Pan", ar: "طاسة سجق" }, price: 132 },
+            { name: { en: "HiRisk Pan", ar: "طاسة هاي ريسك" }, price: 138 },
+            { name: { en: "Crispy Chicken Pan", ar: "طاسة فراخ كريسبي" }, price: 133 },
+            { name: { en: "Hot Dog Pan", ar: "طاسة هوت دوج" }, price: 110 },
+            { name: { en: "Pastarmi Pan", ar: "طاسة بسطرمة" }, price: 110 },
+            { name: { en: "Meat & Potato Pan grip", ar: "طاسة لحم مع البطاطس" }, price: 150 }
         ],
-        image: `${mainLinks.previewURL}/categories/italianCoffee.png`
+        image: `${mainLinks.previewURL}/categories/pans.png`
     },
     {
         category: "Pasta",
@@ -462,7 +481,7 @@ export const menuData: Menu[] = [
             { name: { en: "", ar: "" }, price: 0 },
             { name: { en: "", ar: "" }, price: 0 }
         ],
-        image: `${mainLinks.previewURL}/categories/italianCoffee.png`
+        image: `${mainLinks.previewURL}/categories/pasta.png`
     },
     {
         category: "Sandwich",
@@ -473,7 +492,7 @@ export const menuData: Menu[] = [
             { name: { en: "", ar: "" }, price: 0 },
             { name: { en: "", ar: "" }, price: 0 }
         ],
-        image: `${mainLinks.previewURL}/categories/italianCoffee.png`
+        image: `${mainLinks.previewURL}/categories/sandwich.png`
     },
     {
         category: "Burger",
@@ -484,18 +503,16 @@ export const menuData: Menu[] = [
             { name: { en: "", ar: "" }, price: 0 },
             { name: { en: "", ar: "" }, price: 0 }
         ],
-        image: `${mainLinks.previewURL}/categories/italianCoffee.png`
+        image: `${mainLinks.previewURL}/categories/burger.png`
     },
     {
         category: "Salad",
         items: [
-            { name: { en: "", ar: "" }, price: 0 },
-            { name: { en: "", ar: "" }, price: 0 },
-            { name: { en: "", ar: "" }, price: 0 },
-            { name: { en: "", ar: "" }, price: 0 },
-            { name: { en: "", ar: "" }, price: 0 }
+            { name: { en: "Chicken caesar salad", ar: "سلطة سيزر بالدجاج" }, price: 125 },
+            { name: { en: "Grilled halloumi chicken salad", ar: "سلطة دجاج حلومي مشوي" }, price: 135 },
+            { name: { en: "Shrimp avocado salad", ar: "سلطة الجمبرى و الافوكادو" }, price: 145 },
         ],
-        image: `${mainLinks.previewURL}/categories/italianCoffee.png`
+        image: `${mainLinks.previewURL}/categories/salad.png`
     },
     {
         category: "Addition",
@@ -506,7 +523,7 @@ export const menuData: Menu[] = [
             { name: { en: "", ar: "" }, price: 0 },
             { name: { en: "", ar: "" }, price: 0 }
         ],
-        image: `${mainLinks.previewURL}/categories/italianCoffee.png`
+        image: `${mainLinks.previewURL}/categories/additions.png`
     },
 ]
 

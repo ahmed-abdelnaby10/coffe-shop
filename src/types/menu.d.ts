@@ -10,5 +10,6 @@ interface Item {
 interface Menu { 
     category: string,
     items: Item[],
-    image: string
+    image: string,
+    icon?: React.JSX
 }

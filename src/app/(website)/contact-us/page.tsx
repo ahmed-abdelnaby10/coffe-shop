@@ -2,6 +2,11 @@ import Landing from '@/components/reusable components/Landing'
 import React from 'react'
 import menu from '/public/images/menu.jpg'
 import Container from '@/components/reusable components/Container'
+import { Metadata } from "next";
+
+export const metadata: Metadata = {
+    title: "Contact us"
+}
 
 export default function page() {
     return (

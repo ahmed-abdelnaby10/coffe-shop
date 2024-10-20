@@ -68,8 +68,8 @@ export default function Footer() {
                     </div>
                     <div className="sm:w-full lg:w-fit sm:pl-10 lg:pl-0 flex flex-col items-start justify-start max-sm:col-start-1 max-sm:col-end-3">
                         <Typography variant="h1" color="main" className="sm:mb-3 mb-2 sm:text-2xl text-lg">Success Stories</Typography>
-                        <Link variant="navLink" className="pl-0 pt-0 sm:text-base text-sm font-bold" href="#">Why Choose HiRisk</Link>
-                        <Link variant="navLink" className="pl-0 pt-0 sm:text-base text-sm font-bold" href="#">Testimonials</Link>
+                        <Link variant="navLink" className="pl-0 pt-0 sm:text-base text-sm font-bold" href="">Why Choose HiRisk</Link>
+                        <Link variant="navLink" className="pl-0 pt-0 sm:text-base text-sm font-bold" href="">Testimonials</Link>
                     </div>
                     <div className="w-full lg:w-fit sm:pl-10 lg:pl-0 flex flex-col items-start justify-start max-sm:row-start-2 max-sm:col-start-2">
                         <Typography variant="h1" color="main" className="sm:mb-3 mb-2 sm:text-2xl text-lg">We Deliver!</Typography>

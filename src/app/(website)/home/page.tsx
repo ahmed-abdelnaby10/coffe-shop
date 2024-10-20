@@ -4,7 +4,11 @@ import FollowHirisk from "@/sections/website/home/FollowHirisk";
 import Landing from "@/components/reusable components/Landing";
 import Pickup from "@/sections/website/home/Pickup";
 import mainBg from "/public/images/blog.jpg"
+import { Metadata } from "next";
 
+export const metadata: Metadata = {
+    title: "Home"
+}
 export default function page() {
     return (
         <>

@@ -131,7 +131,7 @@ export default function NavBar() {
                     </SheetContent>
                 </Sheet>
                 <div className="flex items-center gap-4 md:ml-auto md:gap-2 lg:gap-4">
-                    <NextLink href="" className="flex items-center justify-start gap-2">
+                    <NextLink href="tel:01061791627" className="flex items-center justify-start gap-2">
                         <div className="sm:w-10 sm:h-10 w-8 h-8 rounded-full bg-secondary  flex items-center justify-center">
                             <Phone className="w-5 h-5 max-sm:w-4 text-mainColor" />
                         </div>

@@ -4,7 +4,13 @@ import React from 'react'
 import mainBg from "/public/images/blog.jpg"
 import { blogs } from '@/utils/data'
 import { Blog } from '@/types/blogs'
+import { Metadata } from 'next'
 
+export const generateMetadata = async ( { params }: { params: { blogId: string }} ) : Promise<Metadata>=> {
+    return {
+        title: `Blog ${params.blogId}`
+    }
+}
 export default async function page( { params }: { params: { blogId: string }} ) {
     const blogId = +params.blogId
     const blog = blogs.find((blog)=> blog.id === blogId) as Blog

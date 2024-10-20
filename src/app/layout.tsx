@@ -8,7 +8,7 @@ import Footer from "@/components/reusable components/Footer";
 export const metadata: Metadata = {
   title: {
     template: '%s | HiRisk',
-    default: 'Home | HiRisk'
+    default: 'Main | HiRisk'
   },
   description: 'Created by Ahmed M Abdelnaby.',
 }

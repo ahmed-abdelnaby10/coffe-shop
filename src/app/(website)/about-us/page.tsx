@@ -8,6 +8,11 @@ import MissionAndVision from "@/sections/website/about-us/MissionAndVision";
 import History from "@/sections/website/about-us/History";
 import { Separator } from "@/components/ui/separator";
 import SuccessStory from "@/sections/website/about-us/SuccessStory";
+import { Metadata } from "next";
+
+export const metadata: Metadata = {
+    title: "About us"
+}
 
 export default function page() {
     const sideNavLinks = [

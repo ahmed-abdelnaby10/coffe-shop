@@ -4,7 +4,11 @@ import menu from '/public/images/menu.jpg'
 import Container from '@/components/reusable components/Container'
 import SelectMenu from '@/components/reusable components/SelectMenu'
 import Category from '@/sections/website/menu/Category'
+import { Metadata } from "next";
 
+export const metadata: Metadata = {
+    title: "Our Menu"
+}
 
 export default function page() {
     return (

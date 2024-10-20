@@ -3,6 +3,7 @@
 import { Button } from "@/components/ui/button";
 import { Typography } from "@/components/ui/typography";
 import Image, { StaticImageData } from "next/image";
+import React from "react";
 
 interface LandingProps {
     background: StaticImageData,
@@ -37,10 +38,10 @@ export default function Landing({ background, buttons, title, header }: LandingP
                     {
                         splitedHeader.map((word, index) => {
                             return (
-                                <>
+                                <React.Fragment key={index}>
                                     { word }
                                     { index !== splitedHeader.length - 1 && <br /> }
-                                </>
+                                </React.Fragment>
                             )
                         })
                     }

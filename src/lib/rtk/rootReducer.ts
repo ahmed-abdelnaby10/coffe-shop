@@ -1,11 +1,11 @@
 import { combineReducers } from '@reduxjs/toolkit';
 import { persistReducer } from 'redux-persist';
-import storage from 'redux-persist/lib/storage';
+import sessionStorage from 'redux-persist/lib/storage/session';
 import categoryReducer from '@/lib/rtk/slices/category.slice'
 
 const persistConfig = {
     key: 'HiRisk',
-    storage,
+    storage: sessionStorage,
 };
 
 const rootReducer = combineReducers({

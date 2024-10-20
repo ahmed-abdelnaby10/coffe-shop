@@ -9,15 +9,25 @@ import 'swiper/css';
 import 'swiper/css/navigation';
 import { Navigation } from 'swiper/modules';
 import useMediaQuery from "@/hooks/useMediaQuery";
-import Link from "next/link";
 import { Button } from "@/components/ui/button";
 import img from "/public/images/bgwithH.png"
 import AnimatedCard from "@/framer-motions/AnimatedCard";
 import IntroVideo from "./IntroVideo";
+import { useDispatch } from "@/lib/rtk";
+import { setCategory } from "@/lib/rtk/slices/category.slice";
+import { useRouter } from "next/navigation";
 
 export default function Pickup() {
     const isSmallScreen = useMediaQuery("(max-width:640px)")
     const isLargeScreen = useMediaQuery("(max-width:1024px)")
+
+    const dispatch = useDispatch()
+    const router = useRouter()
+
+    const handleOnClick = (cate: Category) => {
+        dispatch(setCategory(cate.title))
+        router.push('/our-menu#menu-items')
+    }
     return (
         <Container className="min-h-fit flex flex-col lg:gap-20 gap-10">
             <div className="flex flex-col items-center justify-start gap-10">
@@ -33,20 +43,28 @@ export default function Pickup() {
                         categories.map((cate) => {
                             return (
                                 <SwiperSlide key={cate.id}>
-                                    <Link href={""} className="p-1 relative overflow-hidden rounded-lg flex items-end h-[300px] lg:h-[300px] before:absolute before:content-[''] before:h-full before:w-full before:top-0 before:left-0 before:z-30 before:bg-cate-gradient">
-                                        <Image 
-                                            src={cate.image.src}
-                                            alt={cate.title}
-                                            width={1000}
-                                            height={1000}
-                                            className="absolute top-0 left-0 w-full h-full z-20 object-cover"
-                                            placeholder="blur"
-                                            blurDataURL={cate.image.blurDataURL}
-                                        />
-                                        <div className="flex items-center justify-between gap-2 z-50 w-full px-1 pb-5">
+                                    <Button 
+                                        variant={"hirisk"} 
+                                        className="p-1 border-none w-full bg-mainBackground relative overflow-hidden rounded-lg flex items-end h-[300px] lg:h-[300px] before:absolute before:content-[''] before:h-full before:w-full before:top-0 before:left-0 before:z-30 before:bg-cate-gradient"
+                                        onClick={()=>{
+                                            handleOnClick(cate)
+                                        }}    
+                                    >
+                                        <div className="absolute top-0 left-0 w-full h-full z-20 opacity-30">
+                                            <Image 
+                                                src={cate.image}
+                                                alt={cate.title}
+                                                width={1000}
+                                                height={1000}
+                                                className="w-full h-full"
+                                                placeholder="blur"
+                                                blurDataURL='/images/blurred.png'
+                                            />
+                                        </div>
+                                        <div className="flex items-center justify-between gap-2 z-50 w-full pl-5 pr-1 pb-5">
                                             <Typography variant="h1" size="xl" color="main">{cate.title}</Typography>
                                         </div>
-                                    </Link>
+                                    </Button>
                                 </SwiperSlide>
                             )
                         })

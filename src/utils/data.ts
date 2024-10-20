@@ -1,10 +1,9 @@
-import { Category } from "@/types/categories";
-import imag from "/public/images/main-menu.jpg"
 import { Blog } from "@/types/blogs";
 import blog1 from "/public/images/blog-1.jpg"
 import blog2 from "/public/images/blog-2.jpg"
 import { mainLinks } from "./constants";
 import { RiDrinks2Line } from "react-icons/ri";
+import { GiCoffeeCup } from "react-icons/gi";
 
 export const blogs: Blog[] = [
     {
@@ -100,6 +99,7 @@ export const menuData: Menu[] = [
             { name: { en: "Corto cookies", ar: "كورتو كوكيز" }, price: 57 }
         ],
         image: `${mainLinks.previewURL}/categories/italianCoffee.png`,
+        icon: GiCoffeeCup
     },
     {
         category: "Coffee",
@@ -531,6 +531,6 @@ export const categories: Category[] = menuData.map((item, index) => {
     return {
         id: index + 1,
         title: item.category,
-        image: imag
+        image: item.image
     }
 })

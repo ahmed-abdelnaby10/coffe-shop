@@ -15,9 +15,12 @@ export const metadata: Metadata = {
 
 export default function RootLayout({
   children,
+  hideFooter = false,
 }: Readonly<{
   children: React.ReactNode;
+  hideFooter?: boolean;
 }>) {
+
   return (  
     <html lang="en">
       <head>
@@ -34,7 +37,7 @@ export default function RootLayout({
               <NavBar />
               <FullPageLoader />
               {children}
-              <Footer />
+              {!hideFooter && (<Footer />)}
           </StoreProvider>
       </body>
     </html>

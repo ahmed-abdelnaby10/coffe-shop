@@ -13,7 +13,7 @@ import '@react-pdf-viewer/core/lib/styles/index.css';
 import { mainLinks } from '@/utils/constants';
 
 export default function MenuDialog() {
-	const pdfFilePath = "/HiRisk Menu.pdf#zoom=FitH&navpanes=0"
+	const pdfFilePath = "/HiRisk-Menu.pdf#zoom=FitH&navpanes=0"
 	return (
 		<Dialog>
 			<DialogTrigger asChild>

@@ -5,7 +5,7 @@ import Container from "./Container"
 import NextLink from "next/link"
 import { Typography } from "../ui/typography"
 import logo from "/public/images/logo.jpg"
-import { mainLinks } from "@/utils/constants"
+import { mainLinks, validRoutes } from "@/utils/constants"
 import { FaFacebook, FaInstagram, FaTiktok } from "react-icons/fa"
 import { usePathname } from "next/navigation"
 import { Link } from "../ui/linkButton"
@@ -14,7 +14,15 @@ import useMediaQuery from "@/hooks/useMediaQuery"
 export default function Footer() {
     const pathname = usePathname()
     const isUltraSmall = useMediaQuery('(max-width:300px)')
-    if (pathname !== "/" && !pathname.includes("pdf")) {
+    
+    const isDynamicRoute = (pathname: string) => {
+        const dynamicRouteRegex = /^\/blogs\/[^/]+$/; // Matches /blogs/<slug>
+        return dynamicRouteRegex.test(pathname);
+    };
+
+    const isValidRoute = (path: string) => validRoutes.includes(path) || isDynamicRoute(path);
+    
+    if (isValidRoute(pathname) && pathname !== "/") {
         return (
             <Container className="bg-mainBackground h-fit overflow-hidden flex flex-col items-center justify-start sm:gap-10 gap-5">
                 <div className="grid sm:gap-5 gap-3 lg:grid-cols-4 grid-cols-2 items-start sm:justify-items-center w-full">

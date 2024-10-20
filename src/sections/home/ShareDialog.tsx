@@ -9,7 +9,7 @@ import { Button } from "@/components/ui/button";
 import { mainLinks } from "@/utils/constants";
 
 const ShareDialog = () => {
-	const pdfFilePath = "/HiRisk Menu.pdf#zoom=FitH&navpanes=0"
+	const pdfFilePath = "/HiRisk-Menu.pdf#zoom=FitH&navpanes=0"
 	const shareUrl = encodeURIComponent(`${mainLinks.shareURL}/${pdfFilePath}`);
   const message = encodeURIComponent("Check out this menu!");
 

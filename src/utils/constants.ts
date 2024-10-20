@@ -6,3 +6,10 @@ export const mainLinks = {
     shareURL: process.env.NODE_ENV === "production" ? "https://hirisk.vercel.app" : "http://localhost:3000",
     previewURL: process.env.NODE_ENV === "production" ? "https://hirisk.vercel.app/images" : "http://localhost:3000/images"
 }
+export const validRoutes = [
+    "/home",
+    "/about-us",
+    "/our-menu",
+    "/blogs",
+    "/contact-us",
+]

@@ -1,7 +1,7 @@
 import { Dialog, DialogContent, DialogDescription, DialogHeader, DialogTitle, DialogTrigger } from "@/components/ui/dialog";
 import { Link } from "@/components/ui/linkButton";
 import Image from "next/image";
-import { FaFacebook, FaInstagram, FaSnapchat, FaTiktok, FaLinkedin, FaWhatsapp, FaEnvelope, FaShareAlt } from "react-icons/fa";
+import { FaFacebook, FaWhatsapp, FaEnvelope, FaShareAlt } from "react-icons/fa";
 import { FaXTwitter } from "react-icons/fa6";
 import menu from "/public/images/main-menu.jpg"
 import { Separator } from "@/components/ui/separator";
@@ -47,22 +47,6 @@ const ShareDialog = () => {
 
           <Link className="rounded-full bg-black text-white hover:text-black hover:bg-white duration-300 w-10 h-10 p-0" href={`https://twitter.com/share?url=${shareUrl}&text=${message}`} target="_blank" rel="noopener noreferrer">
             <FaXTwitter className="text-2xl" />
-          </Link>
-
-          <Link className="rounded-full bg-instagram text-white hover:text-instagram hover:bg-white duration-300 w-10 h-10 p-0" href={`https://instagram.com`} target="_blank" rel="noopener noreferrer">
-            <FaInstagram className="text-2xl" />
-          </Link>
-
-          <Link className="rounded-full bg-snapchat text-white hover:text-snapchat hover:bg-white duration-300 w-10 h-10 p-0" href={`https://snapchat.com`} target="_blank" rel="noopener noreferrer">
-            <FaSnapchat className="text-2xl" />
-          </Link>
-
-          <Link className="rounded-full bg-tiktok text-white hover:text-tiktok hover:bg-white duration-300 w-10 h-10 p-0" href={`https://www.tiktok.com`} target="_blank" rel="noopener noreferrer">
-            <FaTiktok className="text-2xl" />
-          </Link>
-
-          <Link className="rounded-full bg-linkedin text-white hover:text-linkedin hover:bg-white duration-300 w-10 h-10 p-0" href={`https://www.linkedin.com/shareArticle?mini=true&url=${shareUrl}`} target="_blank" rel="noopener noreferrer">
-            <FaLinkedin className="text-2xl" />
           </Link>
 
           <Link className="rounded-full bg-whatsapp text-white hover:text-whatsapp hover:bg-white duration-300 w-10 h-10 p-0" href={`https://wa.me/?text=${message} ${shareUrl}`} target="_blank" rel="noopener noreferrer">

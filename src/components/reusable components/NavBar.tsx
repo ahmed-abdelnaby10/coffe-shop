@@ -4,7 +4,7 @@ import { Link } from "@/components/ui/linkButton"
 import NextLink from "next/link"
 import { usePathname } from "next/navigation"
 import { Menu, Phone } from "lucide-react"
-import { Sheet, SheetContent, SheetTrigger } from "../ui/sheet"
+import { Sheet, SheetContent, SheetDescription, SheetHeader, SheetTitle, SheetTrigger } from "../ui/sheet"
 import { Button } from "../ui/button"
 import { Typography } from "../ui/typography"
 import Image from "next/image"
@@ -12,7 +12,6 @@ import logo from "/public/images/logo.jpg"
 
 export default function NavBar() {
     const pathname = usePathname()
-
     if (pathname !== "/" && !pathname.includes("pdf")) {
         return (
             <header className="flex h-16 items-center justify-between gap-4 border-b bg-background px-4 md:px-6 z-50 relative">
@@ -74,6 +73,10 @@ export default function NavBar() {
                         </Button>
                     </SheetTrigger>
                     <SheetContent side="left" className="flex flex-col items-start justify-between">
+                        <SheetHeader className="sr-only">
+                            <SheetTitle>HiRisk</SheetTitle>
+                            <SheetDescription>HiRisk Navigation Menu</SheetDescription>
+                        </SheetHeader>
                         <nav className="flex flex-col items-start justify-start gap-6 text-lg font-medium w-full">
                             <NextLink
                                 href="/home"
@@ -107,14 +110,14 @@ export default function NavBar() {
                             </Link>
                             <Link
                                 variant="navLink"
-                                href="#"
+                                href="/blogs"
                                 className="h-full rounded-none text-start transition-colors w-full justify-start"
                             >
-                                Customers
+                                Blogs
                             </Link>
                             <Link
                                 variant="navLink"
-                                href="#"
+                                href="/contact-us"
                                 className="h-full rounded-none text-start transition-colors w-full justify-start"
                             >
                                 Contact US

@@ -17,7 +17,7 @@ export default function SideNav({ sideNavLinks, blank }: SidenavProps) {
     const isSmallScreen = useMediaQuery('(min-width:1024px)')
     if (isSmallScreen)
     return (
-        <div className='col-start-1 col-end-2 h-full relative row-start-1 row-end-4'>
+        <div className='col-start-1 col-end-2 h-full relative row-start-1 row-end-4 lg:row-start-1 lg:row-end-7'>
             <div className='flex flex-col h-fit w-full sticky top-10 left-0 gap-5'>
                 {
                     sideNavLinks.map((item, index) => {
